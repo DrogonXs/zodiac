@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="zodiaco.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EscolhaCaso</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Horóscopo</h1>
+        <input type="text" id="signos">
+        <button onclick="escolhaSigno()">buscar</button>
+        <div id="resultado">
+            <p id="frase"></p>
+        </div>
+    </div>
+   <div id="imagens">
+        <img  alt="" id="foto">
+
+    </div>>
+
+
+        <script>
+            function escolhaSigno() {
+                var texto;
+                var signo = document.querySelector("#signos").value;
+                var foto = document.getElementById("foto")
+
+                switch (signo) {
+                    case "Áries":
+                        texto = "Quem tem o signo de Áries pode se identificar com características como a impulsividade e a coragem. Sabe aquela galera que não tem medo de nada? Provavelmente tem Áries forte no Mapa. Eles também amam motivar quem está ao seu redor e são guerreiros por natureza." 
+                        foto.src =
+                        "https://i.pinimg.com/originals/08/d4/2a/08d42a32a19384199da38da3a8137203.jpg"
+                        break;
+                       
+                    case "Touro":
+                        texto = "Quem nasce com o signo Touro pode se identificar com virtudes como a paciência, o bom gosto e a sensualidade. Afeto e valorização do prazer e conforto também podem ser características de Touro, mas sabe aquela galera meio teimosa? Pode ser que tenham o signo de Touro forte no Mapa também..."
+                        foto.src = "https://i.pinimg.com/originals/d9/25/08/d92508039c0846077dad7a0527f7142f.jpg"
+
+                        break;
+                        
+                    case "Gêmeos":
+                        texto = "Quem nasce com o sol no signo de Gêmeos geralmente se identifica com características como a curiosidade, a inteligência e o desejo de liberdade. Sabe aquela galera que ama ler, aprender coisas novas, puxar conversa e fazer novas amizades? Provavelmente tem gêmeos signo forte no mapa."
+                        foto.src = "https://i.pinimg.com/originals/15/44/34/1544343ce92d873058e50ecf914d82d3.jpg"
+
+                        break;
+                        
+                    case "Câncer":
+                        texto = "Emotivos e sensíveis,costuma ter uma forte conexão com as lembranças do passado, que podem contribuir para posturas muito sentimentais ou até melancólicas. "
+                        foto.src ="https://i.pinimg.com/736x/da/18/47/da184743b71051ec1c4f85ccd7b76bc2.jpg"
+
+                        break;
+                        
+                    case "Leão":
+                        texto = "Vaidade e bom humor podem ser marca registrada na personalidade de quem tem o signo de Leão. Carismáticos e naturalmente destacáveis, leoninas e leoninos típicos tendem a ser bem extrovertidos."
+                        foto.src = "https://i.pinimg.com/originals/eb/ee/32/ebee32f4242733c9608eecaba5f825bc.jpg"
+                        break;
+                        
+
+                    case "Virgem":
+                        texto = "Quem nasce com o signo Virgem pode se identificar com características como a objetividade e a organização. Virginianas e virginianos típicos costumam buscar constantemente a perfeição e identificar facilmente detalhes que passam despercebidos por todos os outros, essa é uma das características de Virgem mais admiradas."
+                        foto.src ="https://i.pinimg.com/originals/78/40/c6/7840c697784c698dc4de037cf6474f1f.jpg"
+                        break;
+                        
+                    case "Libra":
+                        texto = "Quem nasce com o signo Libra, em geral, se identifica com características como a cortesia, a delicadeza e a busca constante pelo equilíbrio. Librianas e librianos típicos adoram viver relacionamentos e tendem a ter um pouco de dificuldade para tomar decisões."
+                        foto.src = "https://i.pinimg.com/originals/0c/62/31/0c62317be3205d6a4b8d5c462d4001eb.jpg"
+                        break;
+                        
+                    case "Escorpião":
+                        texto = "Quem nasce com o signo Escorpião pode se identificar com características como a intensidade e o poder de transformação. Escorpianas e escorpianos típicos costumam ser bastante passionais e muito generosos. O espírito de detetive e o sexto sentido afiado também são bem marcantes em quem tem escorpião forte no mapa também."
+                        foto.src = "https://static.wikia.nocookie.net/saintseya/images/2/2b/ARMADURA_DE_ESCORPI%C3%83O_-_FORMATO_DIVINO_-_SOUL_OF_GOLD.png/revision/latest?cb=20170401140913&path-prefix=pt"
+                        break;
+                        
+
+                    case "Ságitario":
+                        texto = "Quem nasce com o signo de Sagitário pode se identificar com características como o otimismo e o desejo de liberdade. Sagitarianas e sagitarianos típicos costumam ser viajantes e, geralmente, enxergam o mundo inteiro como sua casa. A jovialidade também é uma característica marcante de Sagitário."
+                        foto.src = "https://i.pinimg.com/originals/84/04/ea/8404ea4c3908f2f07e043880f80bef68.jpg"
+                        break;
+                        
+                    case "Capricórnio":
+                        texto = "Quem nasce com o signo de Capricórnio pode se identificar com virtudes como persistência e responsabilidade. Capricórnio signo costuma ter metas bem definidas e noção dos seus limites. A relação próxima com o trabalho também pode ser uma característica de capricórnio bem marcante."
+                        foto.src = "https://i.pinimg.com/736x/db/ba/06/dbba06d65d6cc52c07b851294873785e.jpg"
+                         break;
+                        
+                    case "Aquário":
+                        texto = "Um aquariano ou uma aquariana pode se identificar com características como o desejo de inovar e a independência. Sabe aquela galera diferentona? São eles. Aquário signo costuma ser bastante idealista e seus nativos prezam por experiências que trazem liberdade."
+                        foto.src = "https://i.pinimg.com/736x/ec/ca/aa/eccaaab2fa09129802c55248524091fb--pai-tarot.jpg"
+                        break;
+                        
+
+                    case "Peixes":
+                        texto = "Quem nasce com o sol no signo de Peixes pode se identificar com virtudes como a sensibilidade e a intuição. Piscianos e piscianas típicos costumam ser bastante solidários e muitas vezes têm uma forte conexão com a espiritualidade. Por serem bastante sonhadores, se iludir com certa facilidade também é uma característica de Peixes."
+                        foto.src = "https://i.pinimg.com/originals/12/e8/79/12e87911ef89280a4b45c67b07452074.jpg"
+                        break;
+                        
+
+
+                    default:
+                        texto = "insira um signo existente" 
+                        
+                }
+
+
+
+                document.getElementById("frase").innerHTML = texto
+            }
+        </script>
+</body>
+
+</html>
